@@ -1,0 +1,9 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include "boardgame.h"
+
+char* getBrandname(Boardgame *bg)
+{
+   return bg->brandName;
+}
