@@ -1,0 +1,10 @@
+Aadarsh Vinayak
+CIS 3110
+January 29 2018
+
+
+This code is my recrreation of the shell. The code first reads in the values from the user and generates all the arguments. The line is then sent to a function where it tries to find any special functions, like outputting or inputting from a file or running the process in the background. Once it is determined wheather or not the functions inputted require special treatment. The command is then run through a fork process that makes sure it is the parent before executing. Once the command is executed it outputs results or errors and then allows the user to re enter commands.
+
+To use the program you must open a terminal with all the files in it and call make. The file will then compile and generate a msh file. To then run the program you must write the command ./msh. Once that happens You can type anything within the command line.
+
+In terms of the actual code, I wasnt capable of running the command as a background process or craeting my personally made functions. Otherwise the code works to a point. 
