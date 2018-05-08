@@ -1,0 +1,27 @@
+Aadarsh Vinayak
+0978669
+
+
+This assignment was a means of testing our knowledge of pointers, void pointers and function pointers.
+
+
+Running the program
+
+1. Open terminal to the directory of the Makefile
+
+2. type in the command "make"
+
+3. Once the program compiles type the command "bin/runMe"
+
+4. The prorgam will then print the four lines with niformation regarding 2 books and 2 boardgames
+
+5. In terminal use the command make clean
+
+6. The program has then been successfully created
+
+
+Questions
+
+1. The type of the argument that the function pointer will have is void*.
+
+2. If you were to change the type of the store from book to board game without changing the print function, the function will only print out the name and price of the board game. 

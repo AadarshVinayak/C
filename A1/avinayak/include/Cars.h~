@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+
+typedef struct cars{
+   char start;
+   char direction;
+   double time;
+   int position;
+  double endTime;
+}Cars;
+
+Cars* initializeCars(char start, char dir, double time, int position);
+
+

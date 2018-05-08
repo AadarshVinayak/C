@@ -1,0 +1,14 @@
+CC = gcc
+CFLAGS = -Wall -g -std=c99
+
+
+prgm:
+	$(CC) $(CFLAGS) ./src/main.c ./src/*.c ./include/*.h  -Iinclude -o ./bin/runMe
+
+
+test:
+	$(CC) $(CFLAGS) ./src/testMain.c ./src/testInt.c ./include/*.h  -Iinclude -o ./bin/test
+
+
+clean:
+	rm ./bin/* 
