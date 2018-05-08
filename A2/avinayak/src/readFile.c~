@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include "Patient.h"
+#include "PriorityQueue.h"
+#include "ReadFile.h"
+
+void getDataFromFile(char* location, PriorityQueue *pq){
+   FILE* fp;
+
+   fp = fopen("/home/undergrad/1/avinayak/2520 Fall/Assignments/A2/avinayak/assets/test.txt", "r+");
+
+   char *id = malloc(sizeof(char)*100);
+   char *symptom = malloc(sizeof(char)*100);
+   int priority = 0;
+
+   while(fscanf(fp, "%s %d %s", id, &priority, symptom)!=EOF){
+      
+      Patient *c = initializePatient(id, priority, symptom);
+      insert(pq, (void*)c);
+   }
+   free(id);
+   free(symptom);
+   fclose(fp);
+   
+}
+
+int getInputFromUser(){
+   return 0;
+}

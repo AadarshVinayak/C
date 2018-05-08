@@ -1,0 +1,22 @@
+Aadarsh Vinayak
+0978669
+
+
+This assignment is a hospital simulatir using priority queues.
+
+
+Running the program
+
+1. Open terminal to the directory of the Makefile
+
+2. type in the command "make"
+
+3. Once the program compiles type the command "bin/runMe" and type in the location of the text file.
+
+4. The program will then output the menu.
+
+5. typing 1 will allow you to add a new patient, typing 2 will execute the simulation, typing 3 will exit the program
+
+6. The program has then been successfully created
+
+

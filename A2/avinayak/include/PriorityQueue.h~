@@ -1,0 +1,23 @@
+#ifndef _PRIORITY_QUEUE_
+#define _PRIORITY_QUEUE_
+
+#include <stdio.h>
+#include <stdlib.h>
+#include "LinkedListAPI.h"
+#include "Patient.h"
+
+typedef struct queue{
+	List *list;
+	int num;
+} PriorityQueue;
+
+
+PriorityQueue *initializePQ(void (*printFunction)(void *toBePrinted),void (*deleteFunction)(void *toBeDeleted),int (*compareFunction)(const void *first,const void *second));
+void insert(PriorityQueue *pq, void* data);
+void pop(PriorityQueue *pq);
+void* peek(PriorityQueue *pq);
+void removePQ(PriorityQueue* pq, void* toBeDeleted);
+void destroy(PriorityQueue *pq);
+
+
+#endif

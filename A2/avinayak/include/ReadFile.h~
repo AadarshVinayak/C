@@ -1,0 +1,10 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include "Patient.h"
+#include "PriorityQueue.h"
+
+
+FILE getDataFromFile(char *location, PriorityQueue *pq);
+
+int getInputFromUser();

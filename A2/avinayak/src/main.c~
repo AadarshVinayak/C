@@ -1,0 +1,40 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include "LinkedListAPI.h"
+#include "PriorityQueue.h"
+#include "Patient.h"
+#include "ReadData.h"
+
+int main(int argc, char* argv[]){
+  PriorityQueue *pq = initializePQ(&printPatient, &deletePatient, &comparePriority);
+  
+
+  getDataFromFile(argv[1], pq);
+
+  
+  int x = 0;
+  int toContinue = 0;
+  // Node *temp = pq->list->head;
+  while(toContinue == 0){
+    x = getInputFromUser();
+     switch(x){
+        case 1:
+           getPatientFromUser(pq);
+           break;
+        case 2:
+	   computeTime(pq);
+	   toContinue = 1;
+           break;
+        case 3:
+	   toContinue = 1;
+       	   break;
+     }
+     x=0;
+  }
+
+
+  printForward(pq->list);
+
+  return 0;
+}

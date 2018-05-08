@@ -1,0 +1,21 @@
+#ifndef _PATIENT_
+#define _PATIENT_
+
+#include <stdio.h>
+#include <stdlib.h>
+
+typedef struct hospitalPatient{
+   char *id;
+   int priority;
+   char* symptom;
+   int time;
+}Patient;
+
+
+Patient *initializePatient(char* id,int priority, char* symptom); 
+
+void deletePatient(void* toBeDeleted);
+void printPatient(void* toBePrinted);
+int comparePriority(const void* first, const void *second);
+int getTime(char* symptom);
+#endif

@@ -1,0 +1,37 @@
+Aadarsh Vinayak
+0978669
+
+
+This assignment is a traffic simulator using linked lists.
+
+
+Running the program
+
+1. Open terminal to the directory of the Makefile
+
+2. type in the command "make"
+
+3. Once the program compiles type the command "bin/runMe" and type in the location of the text file.
+
+4. The prorgam will then output the traffic simmulation.
+
+5. In terminal use the command make clean
+
+6. The program has then been successfully created
+
+
+Running the test program
+
+1. Open terminal in the directory of the Makefile
+
+2. type in command "make test"
+
+3. Once the program compiles type the command "bin/test"
+
+4. The tests will then run for the linked list
+
+5. In terminal use the command make clean
+
+
+
+The program does not have any simulations as i was unable to finish it on time. I also was not capable of getting the DeleteList or Delete data from list functions to work.

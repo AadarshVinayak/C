@@ -1,0 +1,31 @@
+
+Aadarsh Vinayak
+0978669
+
+
+This assignment is a dictionary/ spell checker
+
+
+Running the program
+
+1. Open terminal to the directory of the Makefile
+
+2. type in the command "make"
+
+3. Once the program compiles type the command "bin/runMe" and type in the location of the text file.
+
+4. The program will then output the menu.
+
+5. typing 1 will allow you to add a new word, typing 2 will allow you to remove a word, typing 3 will allow you to initiate the spell check feature, 4 will print the dictionary, and 5 will exit the program
+
+6. The program has then been successfully created
+
+
+***I was unable to complete the spell checker algorithim***
+
+
+Hash Function and collision resolution strategy
+
+The hash function I used was to take the first character of the user entered input and modulus it by 25(which is the number of characters). Since the size of the table is 25 there are only 25 different options for placement. This also made it easy to not worry about case sensitivity. Thus a user can enter a lower level a or a capital a and it will still be in the first list element.
+
+The way I handled collisions is by creating a singly linked list. Thus anything with the same key or same hash value was added to the end of the singly linked list. This allows for all entered things to be added. The problem with this is that I am not handling if the user enters the same word twice. 
